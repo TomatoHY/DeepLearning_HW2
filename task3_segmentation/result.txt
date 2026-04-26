@@ -1,0 +1,93 @@
+(tom) kw@a100-node09:~/hy/projects/course/DL/hw2/task3_segmentation$ python evaluate.py \
+    --data_path /mnt/data/kw/hy/projects/course/DL/hw2/datasets/stanford_background \
+    --checkpoint ./checkpoints/best_model_ce.pth \
+    --visualize \
+    --num_vis 10
+Using device: cuda
+Loaded 115 images from /mnt/data/kw/hy/projects/course/DL/hw2/datasets/stanford_background/test.txt
+Loaded checkpoint from ./checkpoints/best_model_ce.pth
+Loss type: ce
+Best training mIoU: 0.5858
+
+Running evaluation...
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████| 15/15 [00:01<00:00, 14.16it/s]
+
+Per-class IoU:
+sky                 : 85.71%
+tree                : 63.65%
+road                : 79.15%
+grass               : 53.44%
+water               : 32.36%
+building            : 62.79%
+mountain            : 6.09%
+foreground          : 62.26%
+
+==================================================
+Evaluation Results:
+Mean IoU: 55.68%
+==================================================
+
+Generating visualizations...
+Visualizations saved to ./visualizations
+(tom) kw@a100-node09:~/hy/projects/course/DL/hw2/task3_segmentation$ python evaluate.py \
+    --data_path /mnt/data/kw/hy/projects/course/DL/hw2/datasets/stanford_background \
+    --checkpoint ./checkpoints/best_model_combined.pth \
+    --visualize \
+    --num_vis 10
+Using device: cuda
+Loaded 115 images from /mnt/data/kw/hy/projects/course/DL/hw2/datasets/stanford_background/test.txt
+Loaded checkpoint from ./checkpoints/best_model_combined.pth
+Loss type: combined
+Best training mIoU: 0.5702
+
+Running evaluation...
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████| 15/15 [00:01<00:00, 12.21it/s]
+
+Per-class IoU:
+sky                 : 86.34%
+tree                : 62.85%
+road                : 79.09%
+grass               : 54.65%
+water               : 33.20%
+building            : 61.92%
+mountain            : 12.22%
+foreground          : 61.42%
+
+==================================================
+Evaluation Results:
+Mean IoU: 56.46%
+==================================================
+
+Generating visualizations...
+Visualizations saved to ./visualizations
+(tom) kw@a100-node09:~/hy/projects/course/DL/hw2/task3_segmentation$ python evaluate.py \
+    --data_path /mnt/data/kw/hy/projects/course/DL/hw2/datasets/stanford_background \
+    --checkpoint ./checkpoints/best_model_dice.pth \
+    --visualize \
+    --num_vis 10
+Using device: cuda
+Loaded 115 images from /mnt/data/kw/hy/projects/course/DL/hw2/datasets/stanford_background/test.txt
+Loaded checkpoint from ./checkpoints/best_model_dice.pth
+Loss type: dice
+Best training mIoU: 0.5775
+
+Running evaluation...
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████| 15/15 [00:01<00:00, 14.81it/s]
+
+Per-class IoU:
+sky                 : 86.82%
+tree                : 61.80%
+road                : 78.73%
+grass               : 53.75%
+water               : 37.32%
+building            : 61.29%
+mountain            : 13.03%
+foreground          : 62.78%
+
+==================================================
+Evaluation Results:
+Mean IoU: 56.94%
+==================================================
+
+Generating visualizations...
+Visualizations saved to ./visualizations

@@ -1,0 +1,54 @@
+# Datasets
+datasets/
+data/
+
+# Model checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+models/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+runs/
+wandb/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+
+# Results
+results/
+outputs/
+visualizations/
+*.png
+*.jpg
+*.jpeg
